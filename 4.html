@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Words</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .bounce-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .bounce-word {
+            font-size: 3rem;
+            font-weight: bold;
+            opacity: 0;
+            animation: bounce 1s ease-in-out forwards;
+        }
+
+        .bounce-word:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        .bounce-word:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .bounce-word:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        .bounce-word:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+        .bounce-word:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); opacity: 0; }
+            50% { transform: translateY(-30px); opacity: 1; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body background="C:\Users\Somay\Pictures\3.jpg">
+
+    <div class="bounce-container">
+        <div class="bounce-word">ITS A JOKE KOTHI....&#128514;<br>oo akkoy...if you can known vayyari bhama &#x1F60E;</div>
+      <br>  <a href="C:\Users\Somay\Desktop\swathi\5.html"><b><h3>click me</h3></b></a>
+    </div>
+
+</body>
+</html>

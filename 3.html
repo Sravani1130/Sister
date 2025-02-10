@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .surprise-box {
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 24px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: surpriseAnimation 1s ease-in-out;
+        }
+        @keyframes surpriseAnimation {
+            0% { transform: scale(0); }
+            100% { transform: scale(1); }
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body background="C:\Users\Somay\Desktop\swathi\2.jpg">
+
+    <h1>Click the Button for a Surprise!</h1>
+    <button class="btn" onclick="showSurprise()">Give you  a Surprise!</button>
+
+    <div id="surprise" class="surprise-box">
+        <p><b> velli pani chusuko po MY DEAR SISTER GARU....&#128514;</b><br></p>
+        <a href="C:\Users\Somay\Desktop\swathi\4.html">open this link</a>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('surprise').style.display = 'block';
+        }
+    </script>
+    
+</body>
+</html>
